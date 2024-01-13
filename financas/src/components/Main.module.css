@@ -4,8 +4,11 @@
     align-items: center;
     width: 100%;
     flex-direction: column;
-    height: 90vh;
+    height: 87vh;
     background-color: #dbdbdb;
+    background-image: url('https://github.com/SestariDev/Amigo/blob/main/Memes.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container h1{

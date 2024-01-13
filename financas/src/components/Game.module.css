@@ -28,9 +28,12 @@
 .selectedHints ul {
     list-style: none;
     padding: 0;
-    max-height: 200px;
+    max-height: 100px;
     overflow-y: auto;
     width: 100%;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 10px;
 }
 
 .selectedHints li {
@@ -147,13 +150,24 @@ input {
 }
 
 .iza {
-    background-image: url('https://previews.dropbox.com/p/thumb/ACJ2I6uKwQ2CWZTCQEU23yzdq-Cym1kO4W2o4lfYZZvAQ1r15rC0lC2cClBLlkDzqnKz3xL7EuXe6V_H2b-Of9QdoaeRylZoI0JeqwrQTTtVMihfKtWIO0yR2EiWO77ZMDXY29zQvpqkCWM5hxRDYuGBxNanSOAi-traYDEn8YX3jhf34nAaon0MBOEsA1Ug9FTJR4nxZMzvPr7qvluZqUPpCDjoqLpzoPH2I-lnL5x-oT-hfIALGe-ImDcmFEr8752DU3WsuefV7JTK6e7jkADkobA8D_lYfpql7anyKbkEfvScdC3wYBHRerAlLwqiz-D_g9hURddspcF6U0V3wvmq/p.png');
-    background-size:25% auto; /* Largura de 5% da tela, altura automática */
-    background-repeat: repeat-x; /* Isso faz com que a imagem se repita ao longo do eixo horizontal */
-    width: 100vw; /* Largura da tela */
-    height: 100vh; /* Altura da tela */
-    position: absolute; /* Fixa a imagem na tela para cobrir toda a área */
+    background-image: url('https://github.com/SestariDev/Amigo/blob/main/perfil3.png?raw=true');
+    background-size: 25% auto;
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     top: 600px;
     left: 25px;
-    z-index: 900; /* Coloca a imagem atrás do conteúdo principal */
+    z-index: 900;
+    animation: moveRight 5s linear infinite; /* Adiciona a animação com duração de 5 segundos */
 }
+
+@keyframes moveRight {
+    0% {
+        left: 0; /* Começa da esquerda */
+    }
+    100% {
+        left: -75vw; /* Move para a esquerda, além da tela (largura da tela + 50vw) */
+    }
+}
+
