@@ -1,0 +1,13 @@
+.header{
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #551bb3;
+    color: white;
+    padding: 1em;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

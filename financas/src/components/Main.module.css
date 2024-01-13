@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #dbdbdb;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 5em;
+}
+
+.container .start{
+    width: 500px;
+    height: 100px;
+    padding: 1em;
+    border-radius: 15px;
+    background-color: #268fbe;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    border: 1px solid white;
+}
+
+.container .start:hover{
+    background-color: #551bb3;
+}
+
